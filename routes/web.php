@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -10,6 +9,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::redirect('/', '/genres');
 Route::get('/genres', 'GenresController@index');
+Route::get('/genres/{id}/edit', 'GenresController@edit');
+Route::post('/genres/{id}/store', 'GenresController@store');
 Route::get('/tracks', 'TracksController@index');
+Route::get('/tracks/new', 'TracksController@addTrack');
+Route::post('/tracks/store', 'TracksController@store');
