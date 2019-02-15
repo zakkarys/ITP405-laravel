@@ -33,7 +33,7 @@ class TracksController extends Controller
         $media = $query_media->get();
         $query_genre = DB::table('genres');
         $genres = $query_genre->get();
-        return view('addTracks.addTrack', [
+        return view('addTrack', [
             'albums' => $albums,
             'media' => $media,
             'genres' => $genres
