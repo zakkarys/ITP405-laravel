@@ -1,3 +1,7 @@
+<?php
+  header( 'Location: http://www.redirect-location.com' );
+  exit();
+?>
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
